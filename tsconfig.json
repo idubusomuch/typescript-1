@@ -7,8 +7,9 @@
     "strict": true, // 엄격한 타입 검사 전체를 켬 (아래 모든 strict 계열 옵션 포함)
     "skipLibCheck": true, // node_modules 안의 .d.ts 파일 타입 검사는 생략 (빌드 속도 향상)
     // "outDir": "dist", // 컴파일된 JS 파일이 나올 폴더
-    "noUncheckedIndexedAccess": true // 객체의 인덱싱 타입 접근 시 undefined 포함하도록 강제함 (안정성 ↑)
+    "noUncheckedIndexedAccess": true, // 객체의 인덱싱 타입 접근 시 undefined 포함하도록 강제함 (안정성 ↑)
     // "lib": ["ES2022", "DOM"] // 사용 가능한 빌트인 API 타입 정의 (예: Promise, Map 등)
+    "strictNullChecks": false
   },
   "include": ["src/**/*"] // 컴파일에 포함할 파일 경로들 (여기선 src 폴더 하위 모두)
 }
