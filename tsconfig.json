@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2016", // 출력 JavaScript의 문법 버전 (예: async/await 가능)
+    "module": "commonjs", // Node.js 환경에서 사용하는 모듈 시스템
+    "esModuleInterop": true, // CommonJS 모듈을 ES6 스타일(import ...)로 사용할 수 있게 함
+    "forceConsistentCasingInFileNames": true, // 대소문자 일관성 없으면 오류 (ex: import와 실제 파일명이 다를 때)
+    "strict": true, // 엄격한 타입 검사 전체를 켬 (아래 모든 strict 계열 옵션 포함)
+    "skipLibCheck": true, // node_modules 안의 .d.ts 파일 타입 검사는 생략 (빌드 속도 향상)
+    // "outDir": "dist", // 컴파일된 JS 파일이 나올 폴더
+    "noUncheckedIndexedAccess": true // 객체의 인덱싱 타입 접근 시 undefined 포함하도록 강제함 (안정성 ↑)
+    // "lib": ["ES2022", "DOM"] // 사용 가능한 빌트인 API 타입 정의 (예: Promise, Map 등)
+  },
+  "include": ["src/**/*"] // 컴파일에 포함할 파일 경로들 (여기선 src 폴더 하위 모두)
+}
